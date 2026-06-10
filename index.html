@@ -414,90 +414,90 @@ table{width:100%;border-collapse:collapse}.dt{background:var(--bg-card);border:1
 </div>
 </div>
 <div id="docPageContent2" style="display:none">
-<div class="dt"><table><thead><tr><th width="100">操作人</th><th width="140">操作类型</th><th width="180">时间</th><th>备注信息</th></tr></thead><tbody>
+<div class="dt"><table><thead><tr><th width="100">操作人</th><th width="140">操作类型</th><th width="180">时间</th><th>备注信息</th><th>附件信息</th></tr></thead><tbody>
 <tr>
 <td>李丽霞</td>
 <td>已完成冲销</td>
 <td>2024-12-01 18:16:23</td>
-<td></td>
+<td></td><td>--</td>
 </tr>
 <tr style="background:var(--warn-bg)">
 <td>李丽霞</td>
 <td><span style="color:var(--err)">冲销审批驳回</span></td>
 <td>2024-12-01 18:16:23</td>
-<td></td>
+<td></td><td>--</td>
 </tr>
 <tr>
 <td>李丽霞</td>
 <td>冲销审批</td>
 <td>2024-12-01 18:16:23</td>
-<td></td>
+<td></td><td>--</td>
 </tr>
 <tr style="background:var(--warn-bg)">
 <td>李丽霞</td>
 <td>发起冲销</td>
 <td>2024-12-01 18:16:23</td>
-<td style="color:var(--t1)">发起冲销原因：数据录入错误</td>
+<td style="color:var(--t1)">数据录入错误; 数据录入错误</td><td><a class="link">生产订单SC20241201001.pdf</a></td>
 </tr>
 <tr>
 <td>李丽霞</td>
 <td>审批</td>
 <td>2024-12-01 18:16:23</td>
-<td></td>
+<td></td><td>--</td>
 </tr>
 <tr>
 <td>李丽霞</td>
 <td>反审核</td>
 <td>2024-12-01 18:16:23</td>
-<td></td>
+<td></td><td>--</td>
 </tr>
 <tr>
 <td>杨洋</td>
 <td>审批</td>
 <td>2024-12-01 17:16:23</td>
-<td></td>
+<td></td><td>--</td>
 </tr>
 <tr>
 <td>杨洋</td>
 <td>提交审批</td>
 <td>2024-12-01 12:16:23</td>
-<td></td>
+<td></td><td>--</td>
 </tr>
 <tr style="background:#fff0f0">
 <td>杨洋</td>
 <td><span style="color:var(--err)">审批驳回</span></td>
 <td>2024-12-01 12:16:23</td>
-<td style="color:var(--err)"><strong>驳回原因：</strong>完成质量不行</td>
+<td style="color:var(--err)"><strong>驳回原因：</strong>完成质量不行</td><td>--</td>
 </tr>
 <tr>
 <td>杨洋</td>
 <td>审批</td>
 <td>2024-12-01 11:16:23</td>
-<td></td>
+<td></td><td>--</td>
 </tr>
 <tr>
 <td>李丽霞</td>
 <td>提交</td>
 <td>2024-12-01 10:16:23</td>
-<td></td>
+<td></td><td>--</td>
 </tr>
 <tr>
 <td>李丽霞</td>
 <td>编辑</td>
 <td>2024-12-01 09:16:23</td>
-<td style="font-size:12px;color:var(--t3);line-height:1.6">修改提报图片：月度汇报文档格式参考.jpg；<br>修改备注信息：11月月度汇报文档格式参考</td>
+<td style="font-size:12px;color:var(--t3);line-height:1.6">修改提报图片：月度汇报文档格式参考.jpg；<br>修改备注信息：11月月度汇报文档格式参考</td><td><a class="link">月度汇报文档格式参考.jpg</a></td>
 </tr>
 <tr>
 <td>李丽霞</td>
 <td>编辑</td>
 <td>2024-12-01 08:16:23</td>
-<td style="font-size:12px;color:var(--t3);line-height:1.6">修改建议标题为：生产部月度工作汇报；<br>修改提报时间为：2024-12-30 12:59</td>
+<td style="font-size:12px;color:var(--t3);line-height:1.6">修改建议标题为：生产部月度工作汇报；<br>修改提报时间为：2024-12-30 12:59</td><td>--</td>
 </tr>
 <tr>
 <td>李丽霞</td>
 <td>创建</td>
 <td>2024-12-01 07:16:23</td>
-<td></td>
+<td></td><td>--</td>
 </tr>
 </tbody></table></div>
 </div>
@@ -1048,8 +1048,6 @@ table{width:100%;border-collapse:collapse}.dt{background:var(--bg-card);border:1
 <div class="md-b">
 <div style="text-align:center;margin-bottom:16px"><div class="ci ci-w"><i class="fas fa-question"></i></div><div class="ct-t" id="confirmTitle">确认操作？</div><div class="ct" id="confirmMsg">确认后不可撤销。</div></div>
 <div id="confirmExtraFields" style="display:block;margin-top:16px;padding-top:16px;border-top:1px solid var(--border)">
-<div class="fi3 full" style="margin-bottom:12px"><label>审批备注</label><textarea class="fta" id="approveRemark" placeholder="请输入审批备注（选填，最大200字）" maxlength="200" style="min-height:60px"></textarea></div>
-<div class="fi3 full"><label style="display:flex;align-items:center;gap:8px;cursor:pointer"><input type="file" id="approveAttach" multiple accept=".pdf,.jpg,.jpeg,.png,.doc,.docx" style="display:none" onchange="updateAttachNames(this)"><span class="btn-o btn-sm" onclick="this.previousElementSibling.click()"><i class="fas fa-paperclip"></i> 上传附件</span><span id="attachNames" style="font-size:11px;color:var(--t3)">未选择文件</span></label></div>
 </div>
 </div>
 <div class="md-f"><button class="btn btn-g" onclick="cm('m-confirm')">取消</button><button class="btn btn-p" onclick="doConfirm()">确认</button></div></div></div>
