@@ -198,7 +198,7 @@ table{width:100%;border-collapse:collapse}.dt{background:var(--bg-card);border:1
 <div class="nav-i" onclick="sp('doclist')"><i class="fas fa-list-check"></i> 冲销进度</div></div>
 <div class="nav-g"><div class="nav-gt">审批管理</div>
 <div class="nav-i" onclick="sp('config')"><i class="fas fa-sitemap"></i> 审批流配置</div>
-<div class="nav-i active" onclick="sp('approval')"><i class="fas fa-bell"></i> 消息中心<span class="nav-badge">4</span></div></div>
+<div class="nav-i" onclick="sp('approval')"><i class="fas fa-bell"></i> 消息中心<span class="nav-badge">4</span></div></div>
 <div class="nav-g"><div class="nav-gt">专项流程</div>
 <div class="nav-i" onclick="sp('petition')"><i class="fas fa-stamp"></i> 签呈管理</div></div>
 </nav>
@@ -599,6 +599,7 @@ table{width:100%;border-collapse:collapse}.dt{background:var(--bg-card);border:1
 <button class="btn btn-g" onclick="sp('business')">返回列表</button>
 <button class="btn btn-err btn-lg" onclick="rejectApproval()"><i class="fas fa-times"></i> 驳回</button>
 <button class="btn btn-ok btn-lg" onclick="approveApproval()"><i class="fas fa-check"></i> 审核通过</button>
+</div>
 </div>
 </div>
 </div>
@@ -1225,6 +1226,8 @@ table{width:100%;border-collapse:collapse}.dt{background:var(--bg-card);border:1
 
 <!-- Toast容器 -->
 <div class="tc" id="toastContainer"></div>
+</div>
+</div>
 
 <script>
 var bcMap={dashboard:'冲销概览',doclist:'冲销进度',business:'业务单据',doc:'单据详情',config:'审批流配置',approval:'消息中心',petition:'签呈管理','petition-detail':'签呈详情','petition-add':'发起签呈'};
@@ -2231,5 +2234,6 @@ function updateAttachNames(el){
 }
 sp('business');
 </script>
+</div>
 </body>
 </html>
